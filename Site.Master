@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="Portfolio.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Santiago Figueredo Portfolio</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <nav>
+                    <h1>Backend Developer</h1>
+
+                    <div class="Nav-Links">
+                        <a href="Default.aspx">Home</a>
+                        <a href="Projects.aspx">Projects</a>
+                        <a href="About.aspx">About</a>
+                        <a href="Contact.aspx">Contact Me</a>
+                    </div>
+
+                    <asp:Button ID="btnDownloadCv" runat="server" Text="Download Curriculum" />
+                </nav>
+            </header>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <footer>
+                <hr />
+                <small>Backend Developer</small>
+                <small>&copy; 2026 Santiago Figueredo</small>
+
+                <div class="Footer-Links">
+                    <a href="https://github.com/Thiago-Dev66">GitHub</a>
+                    <a href="https://www.linkedin.com/in/santiago-figueredo-dev66/">LinkedIn</a>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
