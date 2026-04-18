@@ -71,6 +71,7 @@
     <Content Include="Contact.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Projects.aspx" />
+    <Content Include="StyleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

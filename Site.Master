@@ -4,7 +4,13 @@
 
 <html>
 <head runat="server">
-    <title>Santiago Figueredo Portfolio</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Santiago Figueredo - Backend Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <link href="StyleSheet.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -13,7 +19,7 @@
                 <nav>
                     <h1>Backend Developer</h1>
 
-                    <div class="Nav-Links">
+                    <div class="nav-links">
                         <a href="Default.aspx">Home</a>
                         <a href="Projects.aspx">Projects</a>
                         <a href="About.aspx">About</a>
@@ -23,12 +29,15 @@
                     <asp:Button ID="btnDownloadCv" runat="server" Text="Download Curriculum" />
                 </nav>
             </header>
+            <hr />
 
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
-            </asp:ContentPlaceHolder>
+            <div class="main-wrapper">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
 
+            <hr />
             <footer>
-                <hr />
                 <small>Backend Developer</small>
                 <small>&copy; 2026 Santiago Figueredo</small>
 

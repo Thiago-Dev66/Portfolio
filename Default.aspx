@@ -2,8 +2,8 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
 
-    <section>
-        <div>
+    <section class="home">
+        <div class="profile-container">
             <h3>BACKEND DEVELOPER</h3>
             <h2>Santiago Figueredo</h2>
             <p>
