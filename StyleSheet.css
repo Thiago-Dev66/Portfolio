@@ -1,26 +1,41 @@
 ﻿:root {
     --background-dark: #F5F3F3;
-    --font-small: #848687;
     --font: #595B5C;
+    --font-secundary: #0664AB;
+    --font-small: #848687;
+    --font-button: #F9F9FF;
     --title: #313333;
+    --button: #0060A9;
 }
 
 *,
 *::after,
 *::before {
-    box-sizing:border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body {
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+form {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
     background: #FBF9F8;
+    font-family: 'Manrope', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* HEADER */
-    
+
 h1 {
     font-size: 1rem;
     text-align: left;
@@ -34,6 +49,10 @@ p {
     color: var(--font);
 }
 
+header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -43,10 +62,38 @@ nav {
     margin: 1rem;
 }
 
+button, input {
+    background-color: var(--button);
+    color: var(--font-button);
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+    button:hover, input:hover {
+        background-color: #0c4d89;
+    }
+
 .nav-links {
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
+}
+
+.btnCv {
+    text-align: left;
+    width: 9rem;
+}
+
+.btnDownload-container > svg {
+    position: relative;
+    right: 2.5rem;
+    top: 0.3rem;
+    width: 20px;
+    height: 20px;
+    stroke: var(--font-button);
 }
 
 /* HOME */
@@ -55,22 +102,62 @@ h2 {
     color: var(--title)
 }
 
-.main-wrapper {
-    min-height: 100vh;
+main {
+    flex: 1;
 }
 
 .home {
     display: flex;
-    flex-direction: row;
-    justify-items: center;
-    margin: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 5rem 0 0 1rem;
 }
 
 .profile-container {
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
+    gap: 1.5rem;
     width: 50vw;
+}
+
+.profile-container h2 {
+    font-size: 3rem;
+    padding: 0;
+}
+
+.profile-container h3 {
+    font-size: 1rem;
+    color: var(--font-secundary);
+}
+
+.profile-container .btnProyectos {
+    width: 11rem;
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+.btnProyectos-container svg {
+    position: relative;
+    right: 3rem;
+    top: 0.3rem;
+    width: 20px;
+    height: 20px;
+}
+
+.home .imgCv-container {
+    max-width: 300px;
+    max-height: 300px;
+    margin-right: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.home .imgCv-container .imgCv {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 4.5rem;
 }
 
 /* FOOTER */
@@ -84,4 +171,16 @@ footer {
     height: 4rem;
     color: var(--font-small);
     background-color: var(--background-dark);
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer-links > a > svg {
+    width: 30px;
+    height: 30px;
+    margin: 0.5rem;
+}
+
+.footer-links > a > svg:hover {
+    fill: var(--button);
+    transform: scale(1.2);
 }

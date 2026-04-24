@@ -70,6 +70,7 @@
     <Content Include="About.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Images\figueredoCv.jpg" />
     <Content Include="Projects.aspx" />
     <Content Include="StyleSheet.css" />
     <Content Include="Web.config" />
@@ -122,9 +123,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
